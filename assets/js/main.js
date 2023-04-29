@@ -19,3 +19,32 @@ let swiperPopular = new Swiper(".popular_container", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+/* VALUE ACCORDION*/
+const accordionItems = document.querySelectorAll(".value_accordion-item");
+
+accordionItems.forEach((item) => {
+  const accordionHeader = item.querySelector(".value_accordion-header");
+
+  accordionHeader.addEventListener("click", () => {
+    const openItem = document.querySelector("accordion-open");
+
+    toggleItem(item);
+
+    if (openItem && openItem !== item) {
+      toggleItem(openItem);
+    }
+  });
+});
+
+const toggleItem = (item) => {
+  const accordionContent = item.querySelector(".value_accordion-content");
+
+  if (item.classList.contains("accordion-open")) {
+    accordionContent.removeAttribute("style");
+    item.classList.remove("accordion-open");
+  } else {
+    accordionContent.style.height = accordionContent.scrollHeight + "px";
+    item.classList.add("accordion-open");
+  }
+};
