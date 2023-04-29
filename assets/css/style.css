@@ -194,10 +194,28 @@ button {
   .nav_link i {
     font-size: 1.25rem;
   }
-  
+
   .nav_link span {
     display: none;
   }
+
+  .nav .button, .nav_button {
+    display: none;
+  }
+}
+
+/* Change background header */
+.scroll-header {
+  background-color: var(--body-color);
+  box-shadow: 0 1px 4px hsla(228, 4%, 15%, 0.1);
+}
+
+.scroll-header .nav_logo {
+  color: var(--first-color);
+}
+
+.scorll-header .change-theme {
+  color: var(--title-color);
 }
 
 /* Home */
