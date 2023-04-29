@@ -12,8 +12,13 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Real State WebSite</title>
+
+
 
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
@@ -138,8 +143,90 @@
             </div>
         </section>
 
-        <section class="section" id="popular">
-            .
+        <section class="popular section" id="popular">
+            <div class="container">
+                <span class="section_subtitle">Best Choise</span>
+                <h2 class="section_title">
+                    Popular Residences <span>.</span>
+                </h2>
+
+                <div class="popular_container swiper">
+                    <div class="swiper-wrapper">
+                        <article class="popular_card swiper-slide">
+                            <img src="./assets/img/popular1.jpg" alt="" class="popular_img">
+
+                            <div class="popular_data">
+                                <h2 class="popular_price">
+                                    <span>$</span>66,356
+                                </h2>
+                                <h3 class="pupular_title">
+                                    Garden City Assat
+                                </h3>
+                                <p class="popular_description">
+                                    Street The Garden City Of Miraflores, Lima - Peru Av. Sol #9876
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="popular_card swiper-slide">
+                            <img src="./assets/img/popular2.jpg" alt="" class="popular_img">
+
+                            <div class="popular_data">
+                                <h2 class="popular_price">
+                                    <span>$</span>35,159
+
+                                </h2>
+                                <h3 class="pupular_title">
+                                    Gables Luxrious House
+                                </h3>
+                                <p class="popular_description">
+                                    Street The Garden City Of Miraflores, Lima - Peru Av. Sol #9876
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="popular_card swiper-slide">
+                            <img src="./assets/img/popular3.jpg" alt="" class="popular_img">
+
+                            <div class="popular_data">
+                                <h2 class="popular_price">
+                                    <span>$</span>75,043
+                                </h2>
+                                <h3 class="pupular_title">
+                                    Garden Orchard City
+                                </h3>
+                                <p class="popular_description">
+                                    Street The Garden City Of Miraflores, Lima - Peru Av. Sol #9876
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="popular_card swiper-slide">
+                            <img src="./assets/img/popular4.jpg" alt="" class="popular_img">
+
+                            <div class="popular_data">
+                                <h2 class="popular_price">
+                                    <span>$</span>47,043
+                                </h2>
+                                <h3 class="pupular_title">
+                                    Luxurious City Garden
+                                </h3>
+                                <p class="popular_description">
+                                    Street The Garden City Of Miraflores, Lima - Peru Av. Sol #9876
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="swiper-button-next">
+                        <i class="bx bx-chevron-right"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="bx bx-chevron-left"></i>
+                    </div>
+
+                </div>
+            </div>
         </section>
 
         <section class="value section" id="value">
@@ -153,6 +240,7 @@
 
     </main>
 
+    <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
